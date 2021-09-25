@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tip Calculator</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 class="heading">Tip Calculator</h1>
+  <div class="box">
+
+  <table>
+    <tr>
+      <td>
+        <label class="text">Bill <br /></label>
+        <input id=bill type="number" /><br />
+
+        <label class="text">Tip %</label><br />
+        <button onclick="decrement1()">-</button>
+        <input id=demoInput type=number min=0 max=100>
+        <button onclick="increment1()">+</button><br />
+
+
+        <label class="text">Number of people</label><br />
+        <button onclick="decrement()">-</button>
+        <input id=demoPeople type=number min=0 >
+        <button onclick="increment()">+</button><br />
+
+      </td>
+
+      <td>
+        <h1>Tip</h1>
+        <p>per person <span id="dollar">$</span><span id="tpp">0</span> </p>
+
+
+        <h1>Total</h1>
+        <p>per person  <span id="dollar">$</span> <span id="total">0</span> </p>
+      </td>
+    </tr>
+  </table>
+            <button class="btn" type="button" name="button" onclick="calculate()">Calculate</button>
+  </div>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
